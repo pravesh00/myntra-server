@@ -20,6 +20,10 @@ mongoose.connect(process.env.CONNECTION_STRING)
     console.log("Database Connected");
 });
 
-//Rating api
+//Product api
 const productRoute = require('./routes/product')
 app.use('/products',productRoute)
+
+//Main api
+const mainRoute = require('./routes/main')
+app.use('/',mainRoute)
