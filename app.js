@@ -31,3 +31,8 @@ app.use('/',mainRoute)
 //Filter Api
 const filterRoute= require('./routes/filter')
 app.use('/filter',filterRoute)
+
+app.use((req, res, next) => {
+  res.header({"Access-Control-Allow-Origin": "*"});
+  next();
+})
