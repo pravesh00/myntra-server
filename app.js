@@ -29,5 +29,5 @@ const mainRoute = require('./routes/main')
 app.use('/',mainRoute)
 
 //Filter Api
-const filterapi= require('./routes/filter')
-app.use('/filter',mainRoute)
+const filterRoute= require('./routes/filter')
+app.use('/filter',filterRoute)

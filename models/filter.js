@@ -12,6 +12,9 @@ const filterSchema= mongoose.Schema({
     },
     categories:{
         type:[String]
+    },
+    name:{
+        type:String
     }
 });
 
