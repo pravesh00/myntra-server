@@ -20,6 +20,11 @@ mongoose.connect(process.env.CONNECTION_STRING)
     console.log("Database Connected");
 });
 
+app.use((req, res, next) => {
+  res.header({"Access-Control-Allow-Origin": "*"});
+  next();
+})
+
 //Product api
 const productRoute = require('./routes/product')
 app.use('/products',productRoute)
@@ -32,7 +37,3 @@ app.use('/',mainRoute)
 const filterRoute= require('./routes/filter')
 app.use('/filter',filterRoute)
 
-app.use((req, res, next) => {
-  res.header({"Access-Control-Allow-Origin": "*"});
-  next();
-})
