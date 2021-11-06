@@ -17,7 +17,8 @@ router.post('/add',async(req,res)=>{
             brands:req.body.brands,
             sizes:req.body.sizes,
             genders:req.body.genders,
-            categories:req.body.categories
+            categories:req.body.categories,
+            name:req.body.name
         });
 
         await filters.save().then((a)=>{
