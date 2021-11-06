@@ -12,6 +12,9 @@ const productSchema= mongoose.Schema({
     },
     category:{
         type:String
+    },
+    url:{
+        type:String
     }
 });
 

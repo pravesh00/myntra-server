@@ -27,3 +27,7 @@ app.use('/products',productRoute)
 //Main api
 const mainRoute = require('./routes/main')
 app.use('/',mainRoute)
+
+//Filter Api
+const filterapi= require('./routes/filter')
+app.use('/filter',mainRoute)

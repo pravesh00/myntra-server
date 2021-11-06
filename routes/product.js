@@ -17,7 +17,8 @@ router.post('/add',async(req,res)=>{
             brand:req.body.brand,
             size:req.body.size,
             gender:req.body.gender,
-            category:req.body.category
+            category:req.body.category,
+            url:req.body.url
         });
 
         await product.save().then((a)=>{
@@ -36,6 +37,8 @@ router.post('/search',async(req,res)=>{
     const sizes= await req.body.sizes;
     const gender = await req.body.sizes;
     const categories = await req.body.categories;
+
+    
 
 })
 
