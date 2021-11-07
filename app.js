@@ -37,3 +37,7 @@ app.use('/',mainRoute)
 const filterRoute= require('./routes/filter')
 app.use('/filter',filterRoute)
 
+//Size Api
+const sizeRoute= require('./routes/size')
+app.use('/size',sizeRoute)
+

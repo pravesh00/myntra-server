@@ -13,8 +13,13 @@ const sizeSchema= mongoose.Schema({
    waist:{
        type:String
    },
-   
+   foot:{
+       type:String
+   },
+   collar:{
+       type:String
+   }
    
 });
 
-module.exports=mongoose.model('product',productSchema);
+module.exports=mongoose.model('size',sizeSchema);
